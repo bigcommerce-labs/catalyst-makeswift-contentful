@@ -47,13 +47,13 @@ const generate = async () => {
   await generateSchema({
     input: getEndpoint(),
     headers: { Authorization: `Bearer ${getToken()}` },
-    output: join(__dirname, '../schema.graphql'),
+    output: join(__dirname, '../bigcommerce.graphql'),
     tsconfig: undefined,
   });
 
   await generateOutput({
     disablePreprocessing: false,
-    output: join(__dirname, '../graphql-env.d.ts'),
+    output: undefined,
     tsconfig: undefined,
   });
 };

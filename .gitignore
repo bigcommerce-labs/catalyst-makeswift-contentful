@@ -40,8 +40,8 @@ next-env.d.ts
 
 # generated
 client/generated
-schema.graphql
-graphql-env.d.ts
+bigcommerce.graphql
+bigcommerce-graphql.d.ts
 
 # secrets
 .catalyst
