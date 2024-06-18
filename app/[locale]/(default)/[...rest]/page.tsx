@@ -3,6 +3,7 @@ import { getSiteVersion } from '@makeswift/runtime/next/server';
 import { notFound } from 'next/navigation';
 
 import { client } from '~/makeswift/client';
+import { MakeswiftProvider } from '~/makeswift/provider';
 
 interface CatchAllParams {
   locale: string;
@@ -26,5 +27,11 @@ export default async function Page({ params }: { params: CatchAllParams }) {
 
   if (snapshot == null) return notFound();
 
-  return <MakeswiftPage snapshot={snapshot} />;
+  return (
+    <MakeswiftProvider>
+      <MakeswiftPage snapshot={snapshot} />
+    </MakeswiftProvider>
+  );
 }
+
+export const runtime = 'nodejs';
