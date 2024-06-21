@@ -2,7 +2,7 @@
 const createWithMakeswift = require('@makeswift/runtime/next/plugin');
 const createNextIntlPlugin = require('next-intl/plugin');
 
-const withMakeswift = createWithMakeswift();
+const withMakeswift = createWithMakeswift({ previewMode: false });
 const withNextIntl = createNextIntlPlugin();
 
 // @todo relax csp for makeswift embedding

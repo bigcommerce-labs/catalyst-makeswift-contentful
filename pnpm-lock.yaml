@@ -119,6 +119,9 @@ dependencies:
   server-only:
     specifier: ^0.0.1
     version: 0.0.1
+  set-cookie-parser:
+    specifier: ^2.6.0
+    version: 2.6.0
   sharp:
     specifier: ^0.33.4
     version: 0.33.4
@@ -160,6 +163,9 @@ devDependencies:
   '@types/react-google-recaptcha':
     specifier: ^2.1.9
     version: 2.1.9
+  '@types/set-cookie-parser':
+    specifier: ^2.4.9
+    version: 2.4.9
   autoprefixer:
     specifier: ^10.4.19
     version: 10.4.19(postcss@8.4.38)
@@ -2183,6 +2189,12 @@ packages:
 
   /@types/semver@7.5.8:
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
+    dev: true
+
+  /@types/set-cookie-parser@2.4.9:
+    resolution: {integrity: sha512-bCorlULvl0xTdjj4BPUHX4cqs9I+go2TfW/7Do1nnFYWS0CPP429Qr1AY42kiFhCwLpvAkWFr1XIBHd8j6/MCQ==}
+    dependencies:
+      '@types/node': 20.12.12
     dev: true
 
   /@types/use-sync-external-store@0.0.3:
@@ -5931,6 +5943,10 @@ packages:
 
   /server-only@0.0.1:
     resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
+    dev: false
+
+  /set-cookie-parser@2.6.0:
+    resolution: {integrity: sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==}
     dev: false
 
   /set-function-length@1.2.2:
