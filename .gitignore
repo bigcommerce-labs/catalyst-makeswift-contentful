@@ -42,6 +42,8 @@ next-env.d.ts
 client/generated
 bigcommerce.graphql
 bigcommerce-graphql.d.ts
+contentful.graphql
+contentful-env.d.ts
 
 # secrets
 .catalyst
