@@ -11,7 +11,7 @@ interface CatchAllParams {
 }
 
 export async function generateStaticParams() {
-  const pages = await client.getPages();
+  const pages = await client.getPages().toArray();
 
   return pages.map((page) => ({
     path: page.path.split('/').filter((segment) => segment !== ''),

@@ -13,7 +13,7 @@
   "dependencies": {
     "@bigcommerce/catalyst-client": "^0.4.0",
     "@icons-pack/react-simple-icons": "^9.5.0",
-    "@makeswift/runtime": "^0.18.1",
+    "@makeswift/runtime": "^0.19.0",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-checkbox": "^1.0.4",
