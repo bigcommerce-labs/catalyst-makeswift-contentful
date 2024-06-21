@@ -3,8 +3,8 @@ import { getSiteVersion } from '@makeswift/runtime/next/server';
 import { notFound } from 'next/navigation';
 
 import { locales } from '~/i18n';
-import { client } from '~/makeswift/client';
-import { MakeswiftProvider } from '~/makeswift/provider';
+import { client } from '~/integrations/makeswift/client';
+import { MakeswiftProvider } from '~/integrations/makeswift/provider';
 
 interface CatchAllParams {
   locale: string;
