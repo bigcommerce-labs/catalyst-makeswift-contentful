@@ -12,6 +12,7 @@ import {
   ProductCardCarouselFragment,
 } from '~/components/product-card-carousel';
 import { LocaleType } from '~/i18n';
+import { Render } from '~/integrations/contentful/components/render';
 
 interface Props {
   params: {
@@ -63,6 +64,8 @@ export default async function Home({ params: { locale } }: Props) {
   return (
     <>
       <Hero />
+
+      <Render />
 
       <div className="my-10">
         <NextIntlClientProvider locale={locale} messages={{ Product: messages.Product ?? {} }}>
